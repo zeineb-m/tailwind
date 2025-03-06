@@ -12,7 +12,7 @@
     <div id="nav-container"></div>
 
     <script>
-      fetch("./src/nav.html")
+      fetch("nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-container").innerHTML = data;
@@ -34,7 +34,7 @@
         </div>
         <div class="flex justify-end w-full sm:w-auto mt-12 sm:mt-0 pr-10 sm:pr-20">
           <img
-            src="./image/cars.png"
+            src="cars.png"
             alt="Voiture de luxe"
             class="w-full sm:w-[90%] md:w-[110%] lg:w-[120%] h-auto object-contain"
           />
@@ -48,7 +48,7 @@
 
 
     <script>
-fetch("./src/liste-vehicule.html")
+fetch("liste-vehicule.html")
   .then((response) => response.text())
   .then((data) => {
     let container = document.getElementById("listv-container");
@@ -79,7 +79,7 @@ fetch("./src/liste-vehicule.html")
 
 
 <script>
-  fetch("./src/fin.html")
+  fetch("fin.html")
     .then((response) => response.text())
     .then((data) => {
       
