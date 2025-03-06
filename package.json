@@ -2,8 +2,10 @@
   "devDependencies": {
     "tailwindcss": "^3.4.17"
   },
- "scripts": {
-  "build": "node node_modules/tailwindcss/lib/cli.js -i ./src/style.css -o ./public/style.css --minify"
+"scripts": {
+  "postinstall": "chmod +x ./node_modules/.bin/tailwindcss",
+  "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --minify"
 }
+
 
 }
